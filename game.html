@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+    <title>Gameing Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="game">
+
+        <input type="button" name="Again !" id="again" value="Again!">
+
+        <p>(Between 1 and 20)</p>
+    </div>
+    <h1>Guess My Number !</h1>
+    <div class="line">
+        <hr class="subline">
+        <div class="box">
+            <span id="mark">?</span>
+        </div>
+    </div>
+    <div class="number">
+        <input type="number" id="empty-box">
+    </div>
+    <div>
+        <input type="button" name="Check!" id="check" value="Check!">
+    </div>
+    <div class="score">
+        <p id="guess">Start guessing...</p>
+
+        <div id="highscore">
+            <p>Score: <span id="l-score">20</span> </p>
+            <p>Highscore: <span id="h-score">0</span> </p>
+        </div>
+    </div>
+
+</body>
+<script>
+
+
+
+    let x = Math.floor((Math.random() * 20) + 1);
+    
+    document.querySelector('#check').addEventListener('click', () => {
+        let u = Number(document.getElementById("empty-box").value);
+        console.log(u)
+        if (u < x) {
+            console.log(x);
+            document.getElementById("guess").innerText = "Two low";
+        }
+        else if (u > x) {
+            document.getElementById("guess").innerText = "Two High";
+        }
+        else if (u == x) {
+            document.getElementById("guess").innerText = "correct number";
+            document.body.style.backgroundColor = "green";
+        }
+
+
+        let n = Number(document.getElementById("l-score").innerText);
+        console.log(n);
+        n -= 1;
+        document.getElementById("l-score").innerText = n;
+
+        let h = Number(document.getElementById("h-score").innerText);
+        // preventDefault();
+        console.log(h);
+        if (x == u) {
+            h = n;
+            document.getElementById("h-score").innerText= h;
+                
+        }
+
+        let m = Number(document.getElementById("mark").innerText);
+        if (x == u) {
+            m = u;
+            (document.getElementById("mark").innerText) =m;
+        }
+
+
+    })
+
+    console.log(x);
+
+    let button = document.querySelector("#again").addEventListener("click", function () {
+        
+         location.reload();
+        // preventDefault();
+
+        // document.getElementById("h-score").
+        // document.getElementById("h-score").innerText = preventDefault();
+        
+       
+      
+    });
+
+
+
+
+
+</script>
+
+
+</html>

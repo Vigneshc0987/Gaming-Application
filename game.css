@@ -1,0 +1,299 @@
+/* *{
+
+    font-family: "press start 2p",system-ui;
+    font-size:30px; 
+}
+
+body{
+    
+    background-color: black;
+    color: white;
+}
+.game{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between ;
+    padding: 20px;
+    flex-basis: 50%;
+   
+}
+#again{
+    width:10%;
+    padding: 3px;
+    font-size: x-large;
+    background-color: white;
+}
+h1{
+    text-align: center;
+}
+hr{
+    position: relative;
+}
+.line{
+    position: relative;
+    margin-top: 5%;
+
+}
+.subline{
+    top: 50%;
+}
+.box{
+    top: 0%;
+    left: 50%;
+    position: absolute;
+    border: 1px solid white;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    size: 20px;
+    background-color: red;
+}
+#mark{
+    top: 10%;
+    left: 50%;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: red;
+}
+#empty-box{
+    background-color: black;
+    color:white ;
+    width: 14%;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid white;
+    
+}
+.number{
+    margin-top: 10%;
+    margin-left: 20%;
+
+}
+#check{
+    margin-top: 1%;
+    font-size: x-large;
+    width: 10%;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    margin-left:21%;
+    font-weight: bold;
+}
+.score{
+    margin-left: 67%;
+    transform: translate(-30%, -100%);
+}
+#highscore{
+    margin-top: 10%;
+}
+
+
+
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    #again {
+        width: 60%;
+        font-size: medium;
+    }
+
+    #mark {
+        font-size: 30px;
+    }
+
+    #empty-box {
+        width: 80%;
+    }
+
+    #check {
+        width: 80%;
+    }
+}
+
+
+    */
+
+    *{
+        font-family: "press start 2p", system-ui;
+        font-size: 30px; 
+    }
+    
+    body{
+        background-color: black;
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .game{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        flex-basis: 50%;
+    }
+    
+    #again{
+        width: 15%;
+        padding: 10px;
+        font-size: x-large;
+        background-color: white;
+        border-radius: 5px;
+    }
+    
+    h1{
+        text-align: center;
+    }
+    
+    hr{
+        position: relative;
+    }
+    
+    .line{
+        position: relative;
+        margin-top: 5%;
+    }
+    
+    .subline{
+        top: 50%;
+    }
+    
+    .box{
+        top: 0%;
+        left: 50%;
+        position: absolute;
+        border: 1px solid white;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 50px;
+        padding: 20px;
+        text-align: center;
+        background-color: red;
+    }
+    
+    #mark{
+        font-size: 50px;
+        font-weight: bold;
+        background-color: red;
+    }
+    
+    #empty-box{
+        background-color: black;
+        color: white;
+        width: 14%;
+        height: 40px;
+        padding: 5px;
+        border: 1px solid white;
+    }
+    
+    .number{
+        margin-top: 10%;
+        margin-left: 20%;
+    }
+    
+    #check{
+        margin-top: 1%;
+        font-size: x-large;
+        width: 10%;
+        padding: 10px;
+        color: black;
+        background-color: white;
+        margin-left: 21%;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    
+    .score{
+        margin-left: 67%;
+        transform: translate(-30%, -100%);
+    }
+    
+    #highscore{
+        margin-top: 10%;
+    }
+    
+    /* Media queries for mobile responsiveness */
+    @media (max-width: 768px) {
+        body {
+            font-size: 20px;
+        }
+    
+        .game {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #again {
+            width: 40%;
+            font-size: large;
+            padding: 10px;
+        }
+    
+        h1 {
+            font-size: 24px;
+        }
+    
+        .box {
+            width: 60px;
+            height: 40px;
+        }
+    
+        #mark {
+            font-size: 40px;
+        }
+    
+        #empty-box {
+            width: 60%;
+            height: 40px;
+        }
+    
+        .number {
+            margin-left: 0;
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+        }
+    
+        #check {
+            width: 60%;
+            margin-left: 0;
+        }
+    
+        .score {
+            margin-left: 0;
+            text-align: center;
+        }
+    
+        #highscore {
+            margin-top: 5%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        body {
+            font-size: 16px;
+        }
+    
+        #again {
+            width: 60%;
+            font-size: medium;
+        }
+    
+        #mark {
+            font-size: 30px;
+        }
+    
+        #empty-box {
+            width: 80%;
+        }
+    
+        #check {
+            width: 80%;
+        }
+    }
+    
